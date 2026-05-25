@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <!--link to the css page-->
+        
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <title>Lolly's Transport Services</title>
+    </head>
+    <body>
+        <!--page header-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">LOLLY</a>
+
+             <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                <li><a href="#home" class="nav__link active-link">Home</a></li>
+
+                 <li><a href="#about" class="nav__link">About</a></li>
+
+                 <li><a href="#services" class="nav__link">Services</a></li>
+
+                 <li><a href="#contact" class="nav__link">Contact Us</a></li>
+             </ul>
+
+             <!--Buttons that open/close the menu-->
+             <button class="nav__close" id="nav-close" type="button" aria-label="Close Menu">X</button>
+             </div>  
+
+            <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+            </button>
+            </nav>
+        </header>
+
+        <main class="main">
+        <section class="Home section" id="home">
+          <div class="home__container container grid">
+            <div class="home__content">
+                <p class="home__eyebrow">Transport for families , events , and other trips</p>
+                <h1 class="home__title">LOLLY'S TRANSPORT</h1>
+                <h2 class="home__headline">Reliable local transport</h2>
+                <p class="home__description">Safe , friendly, and dependable transport for kids between Akasia and Pretoria North</p>
+
+                    <a href="#contact" class="button home__quote-button">Request A Quote</a>
+            </div>
+          </div>
+        </section>
+
+         <section class="about section" id="about">
+           <div class="about__container container grid">
+           <div class="about__data">
+            <p class="section__eyebrow">About Us</p>
+            <h2 class="section__title">Transport that is planned with care.</h2>
+            <p class="about__description">
+            We provide clean, reliable, and well-planned transportation services for church trips, weddings, funeral services, parties, and school trip bookings. Every route is confirmed before pickup day, with clear communication from request to drop-off.
+            </p>
+           </div>
+
+           <div class="about__list">
+            <article class="about__item">
+                <i class="ri-map-pin-time-line"></i>
+                <div>
+                    <h3>Confirmed Routes</h3>
+                    <p>Pickup points, destination details, and timing are checked before the trip</p>
+                </div>
+            </article>
+
+            <article class="about__item">
+            <i class="ri-shield-check-line"></i>
+            <div>
+            <h3>Safe travel</h3>
+            <p>Clean vehicles and careful driving for family, school, and community groups.</p>
+            </div>
+            </article>
+
+            <article class="about__item">
+            <i class="ri-customer-service-2-line"></i>
+            <div>
+                <h3>Clear updates</h3>
+                <p>Simple communication from the first quote until everyone arrives.</p>
+            </div>
+            </article>
+          </div>
+        </div>
+        </section>
+
+         <section class="services section" id="services">
+         <div class="container">
+            <p class="section__eyebrow">Services we offer:</p>
+            <h2 class="section__title">Book transport for the following:</h2>
+         </div>
+
+         <div class="favorite__container">
+            <div class="favorite__swiper swiper">
+                <div class="swiper-wrapper">
+                    <article class="favorite__article swiper-slide">
+                    <img src="church.png" class="favorite__img">
+                    <span class="favorite__model">Church Trips</span>
+                    </article>
+
+                    <article class="favorite__article swiper-slide">
+                    <img src="school.png" class="favorite__img">
+                    <span class="favorite__model">School Trips</span>
+                    </article>
+
+                    <article class="favorite__article swiper-slide">
+                    <img src="coffin.png" class="favorite__img">
+                    <span class="favorite__model">Funeral Services</span>
+                    </article>
+
+                    <article class="favorite__article swiper-slide">
+                    <img src="couple.png" class="favorite__img">
+                    <span class="favorite__model">Wedding Trips</span>
+                    </article>
+
+                    <article class="favorite__article swiper-slide">
+                    <img src="confetti.png" class="favorite__img">
+                    <span class="favorite__model">Party Trips</span>
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+         </div>
+        </section>
+
+         <section class="quote section" id="contact">
+         <div class="quote__container container grid">
+            <div class="quote__data">
+             <h2 class="section__title quote__title">CONTACT US</h2>
+             <p class="quote__description">
+                Send your pickup details, passenger count, date, time, and destination. Enquiries from this form are addressed to rapulamasilo3@gmail.com.
+             </p>
+             <div class="contact__links">
+                <a href="">0781098475</a>
+                <a href="">0791232965</a>
+                <a href="">rapulamasilo3@gmail.com</a>
+             </div>
+            </div>
+
+            <iframe class="quote__frame" name="quote-frame" title="Enquiry submission"></iframe>
+
+            <form class="quote__form" action="https://formsubmit.co/speczz.za@gmail.com" method="POST" target="quote-frame">
+              <label>
+                Name 
+                <input type="text" name="name" autocomplete="name" required>
+              </label>
+
+              <label>
+                Phone
+                <input type="tel" name="phone" autocomplete="tel" required>
+              </label>
+
+              <label>Enquiry Details
+                <textarea name="trip-details" rows="4" placeholder="Pickup, destination, date, time, passenger count" required></textarea>
+               </label>
+
+               <input type="hidden" name="_subject" value="Transport Enquiry">
+               <input type="hidden" name="_captcha" value="false">
+               <input type="hidden" name="_template" value="table">
+               <input type="hidden" name="_next" value="about:blank">
+               <input type="text" name="_honey" class="quote__honey" tabindex="-1" autocomplete="off">
+
+               <button class="button quote__button" type="submit">Send Enquiry</button>
+               <p class="quote__status" aria-live="polite"></p>
+            </form>
+         </div>
+        </section>
+        </main>
+
+        <!--Page footer-->
+        <footer class="footer">
+       <div class="footer__container container grid">
+       <a href="#home" class="footer__logo">LOLLY'S TRANSPORT</a>
+
+       <div class="footer__content grid">
+       <div>
+        <h3 class="footer__title">SERVICES</h3>
+        <ul>
+            <li><a href="#services" class="footer__link">Church Trips</a></li>
+            <li><a href="#services" class="footer__link">School Trips</a></li>
+            <li><a href="#services" class="footer__link">Weddings</a></li>
+            <li><a href="#services" class="footer__link">Party Trips</a></li>
+            <li><a href="#services" class="footer__link">Funeral Services</a></li>
+        </ul>
+       </div>
+
+       <div>
+        <h3 class="footer__title">SUPPORT</h3>
+        <ul>
+            <li><a href="" class="footer__link">0781098475</a></li>
+            <li><a href="" class="footer__link">0791232965</a></li>
+            <li><a href="mailto:speczz.za@gmail.com" class="footer__link">rapulamasilo3@gmail.com</a></li>
+        </ul>
+       </div>
+       </div>
+       </div>
+       <span class="footer__copy">&#169; Lolly's Transport. All rights reserved.</span>
+        </footer>
+       
+        <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">Up</a>
+
+        
+        
+        <script src="swiper-bundle.min.js"></script>
+        <!--Javascript page-->
+        <script src="Page.js"></script>
+    </body> 
+</html>
