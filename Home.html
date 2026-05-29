@@ -38,13 +38,18 @@
             </nav>
         </header>
 
+        <div class="scroll-progress" aria-hidden="true">
+            <span class="scroll-progress__bar" id="scroll-progress-bar"></span>
+            <span class="scroll-progress__value" id="scroll-progress-value">0%</span>
+        </div>
+
         <main class="main">
         <section class="Home section" id="home">
           <div class="home__container container grid">
-            <div class="home__content">
-                <p class="home__eyebrow">Transport for families , events , and other trips</p>
-                <h1 class="home__title">LOLLY'S TRANSPORT</h1>
-                <h2 class="home__headline">Reliable local transport</h2>
+            <div class="home__content" data-parallax-speed="-0.08">
+                <p class="home__eyebrow reveal">Transport for families , events , and other trips</p>
+                <h1 class="home__title scramble-text" data-text="LOLLY'S TRANSPORT">LOLLY'S TRANSPORT</h1>
+                <h2 class="home__headline reveal">Reliable local transport</h2>
                 <p class="home__description">Safe , friendly, and dependable transport for kids between Akasia and Pretoria North</p>
 
                     <a href="#contact" class="button home__quote-button">Request A Quote</a>
@@ -54,16 +59,16 @@
 
          <section class="about section" id="about">
            <div class="about__container container grid">
-           <div class="about__data">
+           <div class="about__data reveal" data-parallax-speed="0.04">
             <p class="section__eyebrow">About Us</p>
-            <h2 class="section__title">Transport that is planned with care.</h2>
+            <h2 class="section__title scramble-text" data-text="Transport that is planned with care.">Transport that is planned with care.</h2>
             <p class="about__description">
             We provide clean, reliable, and well-planned transportation services for church trips, weddings, funeral services, parties, and school trip bookings. Every route is confirmed before pickup day, with clear communication from request to drop-off.
             </p>
            </div>
 
            <div class="about__list">
-            <article class="about__item">
+            <article class="about__item reveal">
                 <i class="ri-map-pin-time-line"></i>
                 <div>
                     <h3>Confirmed Routes</h3>
@@ -71,7 +76,7 @@
                 </div>
             </article>
 
-            <article class="about__item">
+            <article class="about__item reveal">
             <i class="ri-shield-check-line"></i>
             <div>
             <h3>Safe travel</h3>
@@ -79,7 +84,7 @@
             </div>
             </article>
 
-            <article class="about__item">
+            <article class="about__item reveal">
             <i class="ri-customer-service-2-line"></i>
             <div>
                 <h3>Clear updates</h3>
@@ -91,36 +96,36 @@
         </section>
 
          <section class="services section" id="services">
-         <div class="container">
+         <div class="container reveal" data-parallax-speed="0.03">
             <p class="section__eyebrow">Services we offer:</p>
-            <h2 class="section__title">Book transport for the following:</h2>
+            
          </div>
 
          <div class="favorite__container">
             <div class="favorite__swiper swiper">
                 <div class="swiper-wrapper">
-                    <article class="favorite__article swiper-slide">
-                    <img src="church.png" class="favorite__img">
+                    <article class="favorite__article swiper-slide reveal">
+                    <img src="church.png" class="favorite__img" alt="Church trips service">
                     <span class="favorite__model">Church Trips</span>
                     </article>
 
-                    <article class="favorite__article swiper-slide">
-                    <img src="school.png" class="favorite__img">
+                    <article class="favorite__article swiper-slide reveal">
+                    <img src="school.png" class="favorite__img" alt="School trips service">
                     <span class="favorite__model">School Trips</span>
                     </article>
 
-                    <article class="favorite__article swiper-slide">
-                    <img src="coffin.png" class="favorite__img">
+                    <article class="favorite__article swiper-slide reveal">
+                    <img src="coffin.png" class="favorite__img" alt="Funeral services transport">
                     <span class="favorite__model">Funeral Services</span>
                     </article>
 
-                    <article class="favorite__article swiper-slide">
-                    <img src="couple.png" class="favorite__img">
+                    <article class="favorite__article swiper-slide reveal">
+                    <img src="couple.png" class="favorite__img" alt="Wedding trips service">
                     <span class="favorite__model">Wedding Trips</span>
                     </article>
 
-                    <article class="favorite__article swiper-slide">
-                    <img src="confetti.png" class="favorite__img">
+                    <article class="favorite__article swiper-slide reveal">
+                    <img src="confetti.png" class="favorite__img" alt="Party trips service">
                     <span class="favorite__model">Party Trips</span>
                     </article>
                 </div>
@@ -131,8 +136,8 @@
 
          <section class="quote section" id="contact">
          <div class="quote__container container grid">
-            <div class="quote__data">
-             <h2 class="section__title quote__title">CONTACT US</h2>
+            <div class="quote__data reveal" data-parallax-speed="0.04">
+             <h2 class="section__title quote__title scramble-text" data-text="CONTACT US">CONTACT US</h2>
              <p class="quote__description">
                 Send your pickup details, passenger count, date, time, and destination. Enquiries from this form are addressed to rapulamasilo3@gmail.com.
              </p>
@@ -145,7 +150,7 @@
 
             <iframe class="quote__frame" name="quote-frame" title="Enquiry submission"></iframe>
 
-            <form class="quote__form" action="https://formsubmit.co/speczz.za@gmail.com" method="POST" target="quote-frame">
+            <form class="quote__form reveal" action="https://formsubmit.co/speczz.za@gmail.com" method="POST" target="quote-frame">
               <label>
                 Name 
                 <input type="text" name="name" autocomplete="name" required>
