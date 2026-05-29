@@ -35,38 +35,6 @@ const closeMenu = () => {
     }
 }
 
-//send enquiry email
-const quoteForms = document.querySelectorAll('.quote__form')
-quoteForms.forEach(form => {
-    form.addEventListener('submit', () => {
-        const submitButton = form.querySelector('.quote__button')
-        const status = form.querySelector('.quote__status')
-
-        if (status) {
-            status.textContent = 'Sending enquiry...'
-            status.classList.remove('quote__status--error', 'quote__status--success')
-        }
-
-        if (submitButton) {
-            submitButton.disabled = true
-            submitButton.textContent = 'Sending...'
-        }
-
-        setTimeout(() => {
-            if (status) {
-                status.textContent = 'Enquiry submitted. Please check the email inbox to confirm FormSubmit if this is the first enquiry.'
-                status.classList.add('quote__status--success')
-            }
-
-            if (submitButton) {
-                submitButton.disabled = false
-                submitButton.textContent = 'Send Enquiry'
-            }
-            form.reset()
-        }, 1800)
-    })
-})
-
 //background header blur
 const blurHeader = ()=> {
     const header = document.getElementById('header')

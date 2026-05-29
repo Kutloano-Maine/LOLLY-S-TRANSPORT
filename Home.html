@@ -142,15 +142,17 @@
                 Send your pickup details, passenger count, date, time, and destination. Enquiries from this form are addressed to rapulamasilo3@gmail.com.
              </p>
              <div class="contact__links">
-                <a href="">0781098475</a>
-                <a href="">0791232965</a>
-                <a href="">rapulamasilo3@gmail.com</a>
+                <a href="tel:0781098475">0781098475</a>
+                <a href="tel:0791232965">0791232965</a>
+                <a href="mailto:speczz.za@gmail.com">rapulamasilo3@gmail.com</a>
              </div>
             </div>
 
-            <iframe class="quote__frame" name="quote-frame" title="Enquiry submission"></iframe>
+            <form class="quote__form reveal" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="1cf69d87-833e-4003-87af-64f6a9ebf383">
+              <input type="hidden" name="subject" value="Transport Enquiry">
+              <input type="hidden" name="from_name" value="Lolly's Transport Website">
 
-            <form class="quote__form reveal" action="https://formsubmit.co/speczz.za@gmail.com" method="POST" target="quote-frame">
               <label>
                 Name 
                 <input type="text" name="name" autocomplete="name" required>
@@ -165,14 +167,7 @@
                 <textarea name="trip-details" rows="4" placeholder="Pickup, destination, date, time, passenger count" required></textarea>
                </label>
 
-               <input type="hidden" name="_subject" value="Transport Enquiry">
-               <input type="hidden" name="_captcha" value="false">
-               <input type="hidden" name="_template" value="table">
-               <input type="hidden" name="_next" value="about:blank">
-               <input type="text" name="_honey" class="quote__honey" tabindex="-1" autocomplete="off">
-
                <button class="button quote__button" type="submit">Send Enquiry</button>
-               <p class="quote__status" aria-live="polite"></p>
             </form>
          </div>
         </section>
@@ -198,8 +193,8 @@
        <div>
         <h3 class="footer__title">SUPPORT</h3>
         <ul>
-            <li><a href="" class="footer__link">0781098475</a></li>
-            <li><a href="" class="footer__link">0791232965</a></li>
+            <li><a href="tel:0781098475" class="footer__link">0781098475</a></li>
+            <li><a href="tel:0791232965" class="footer__link">0791232965</a></li>
             <li><a href="mailto:speczz.za@gmail.com" class="footer__link">rapulamasilo3@gmail.com</a></li>
         </ul>
        </div>
